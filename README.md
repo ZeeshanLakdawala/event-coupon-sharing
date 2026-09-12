@@ -1,6 +1,5 @@
 # Event Coupon Check-in
 
-[![CI](https://github.com/ZeeshanLakdawala/event-coupon-sharing/actions/workflows/ci.yml/badge.svg)](https://github.com/ZeeshanLakdawala/event-coupon-sharing/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node.js 24](https://img.shields.io/badge/Node.js-24-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -14,7 +13,7 @@ A secure, CSV-backed event check-in system that verifies registered attendees, p
 
 This repository uses verifiable engineering controls instead of unsupported certification claims:
 
-- **Continuous integration:** GitHub Actions runs formatting checks, workspace typechecking, builds, and slide validation for pushes and pull requests.
+- **Quality gate:** The workspace passes strict TypeScript checks, production builds, and slide-manifest validation.
 - **Dependency maintenance:** Dependabot opens weekly pnpm dependency update pull requests.
 - **API contract:** OpenAPI is the source of truth for generated client and validation code.
 - **Security process:** Vulnerability reporting and privacy expectations are documented in [SECURITY.md](SECURITY.md).
