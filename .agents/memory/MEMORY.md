@@ -1,0 +1,1 @@
+- [Organizer report privacy](organizer-report-privacy.md) — email final CSVs to the stored organizer; never expose them through the public event ID.

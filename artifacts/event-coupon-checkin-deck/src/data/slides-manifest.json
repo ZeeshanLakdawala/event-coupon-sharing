@@ -1,0 +1,42 @@
+[
+  {
+    "id": "34ce78d2-3101-4d01-b33c-ae5a455f5351",
+    "position": 1,
+    "filepath": "src/pages/slides/EventCouponCheckIn.tsx",
+    "title": "Event Coupon Check-in",
+    "description": "Product overview cover",
+    "speakerNotes": ""
+  },
+  {
+    "id": "821e4377-6a0a-48f7-831a-389666671fe4",
+    "position": 2,
+    "filepath": "src/pages/slides/EventDayProblem.tsx",
+    "title": "The event-day problem",
+    "description": "Core event-day challenges",
+    "speakerNotes": ""
+  },
+  {
+    "id": "393c0eb8-d8ee-4693-b965-0251ccf2dc5b",
+    "position": 3,
+    "filepath": "src/pages/slides/SimpleFlow.tsx",
+    "title": "One simple flow for everyone",
+    "description": "Organizer and attendee journey",
+    "speakerNotes": ""
+  },
+  {
+    "id": "357d6f4f-a123-4cfc-be6b-9a2c0b66a58d",
+    "position": 4,
+    "filepath": "src/pages/slides/PrivacyWorkflow.tsx",
+    "title": "Privacy built into the workflow",
+    "description": "Privacy and security decisions",
+    "speakerNotes": ""
+  },
+  {
+    "id": "4665291e-22f0-4a80-8d2d-671366282506",
+    "position": 5,
+    "filepath": "src/pages/slides/CompleteRecord.tsx",
+    "title": "A complete record after the event",
+    "description": "Reporting and launch readiness",
+    "speakerNotes": ""
+  }
+]

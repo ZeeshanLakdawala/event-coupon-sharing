@@ -1,0 +1,28 @@
+kind = "slides"
+previewPath = "/event-coupon-checkin-deck/"
+title = "Event Coupon Check-in Deck"
+description = "A five-slide product overview covering the event-day problem, organizer and attendee flow, privacy model, final attendance reporting, and launch readiness."
+version = "1.0.0"
+id = "artifacts/event-coupon-checkin-deck"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/event-coupon-checkin-deck/" ]
+localPort = 19244
+
+[services.development]
+run = "pnpm --filter @workspace/event-coupon-checkin-deck run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/event-coupon-checkin-deck", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/event-coupon-checkin-deck/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19244"
+BASE_PATH = "/event-coupon-checkin-deck/"

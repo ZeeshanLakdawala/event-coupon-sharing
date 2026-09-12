@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Event Coupon Check-in"
+description = "A simple self-check-in app for event organizers. Organizers upload an attendee CSV with assigned coupon codes, share one check-in link, and verified attendees receive their coupon by email while the organizer tracks check-in status."
+version = "1.0.0"
+id = "artifacts/event-coupon-checkin"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20178
+
+[services.development]
+run = "pnpm --filter @workspace/event-coupon-checkin run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/event-coupon-checkin", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/event-coupon-checkin/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20178"
+BASE_PATH = "/"
