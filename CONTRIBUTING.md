@@ -66,7 +66,7 @@ pnpm run build
 pnpm --filter @workspace/event-coupon-checkin-deck run validate-slides
 ```
 
-The GitHub Actions workflow runs the same checks on pushes and pull requests.
+Pull requests should include the output of these checks in their validation notes.
 
 ## Commit guidance
 
