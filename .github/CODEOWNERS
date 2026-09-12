@@ -1,0 +1,9 @@
+# Default ownership for repository changes.
+* @ZeeshanLakdawala
+
+# Changes to privacy, security, or operational policy need maintainer review.
+/SECURITY.md @ZeeshanLakdawala
+/CODE_OF_CONDUCT.md @ZeeshanLakdawala
+/artifacts/api-server/src/lib/ @ZeeshanLakdawala
+/artifacts/api-server/src/routes/ @ZeeshanLakdawala
+/lib/api-spec/ @ZeeshanLakdawala

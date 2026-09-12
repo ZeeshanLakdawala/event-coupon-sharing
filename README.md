@@ -1,6 +1,27 @@
 # Event Coupon Check-in
 
+[![CI](https://github.com/ZeeshanLakdawala/event-coupon-sharing/actions/workflows/ci.yml/badge.svg)](https://github.com/ZeeshanLakdawala/event-coupon-sharing/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Node.js 24](https://img.shields.io/badge/Node.js-24-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![OpenAPI](https://img.shields.io/badge/API-OpenAPI%203.0-6BA539?logo=openapiinitiative&logoColor=white)](lib/api-spec/openapi.yaml)
+
 A secure, CSV-backed event check-in system that verifies registered attendees, privately emails each attendee their assigned coupon, and gives organizers a complete attendance report without exposing coupon codes in the dashboard.
+
+> A privacy-first event operations system: one shared QR code, email-only attendee verification, private coupon delivery, and an organizer-safe attendance record.
+
+## Project signals
+
+This repository uses verifiable engineering controls instead of unsupported certification claims:
+
+- **Continuous integration:** GitHub Actions runs formatting checks, workspace typechecking, builds, and slide validation for pushes and pull requests.
+- **Dependency maintenance:** Dependabot opens weekly pnpm dependency update pull requests.
+- **API contract:** OpenAPI is the source of truth for generated client and validation code.
+- **Security process:** Vulnerability reporting and privacy expectations are documented in [SECURITY.md](SECURITY.md).
+- **Review ownership:** Sensitive API, storage, and policy paths are covered by [CODEOWNERS](.github/CODEOWNERS).
+- **License:** Released under the [MIT License](LICENSE).
+
+This project has not undergone an external security certification or compliance audit. The signals above describe repository controls, not a certification.
 
 ## The exact problem it solves
 
@@ -195,6 +216,10 @@ Validate the slide deck:
 ```bash
 pnpm --filter @workspace/event-coupon-checkin-deck run validate-slides
 ```
+
+## Contributing
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request. Community participation is governed by the [Code of Conduct](CODE_OF_CONDUCT.md), and security issues should be reported privately using [SECURITY.md](SECURITY.md).
 
 ## API overview
 
